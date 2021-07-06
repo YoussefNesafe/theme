@@ -12,12 +12,12 @@
 
     <!--Fontawesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-          integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
-          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!--SwiperJS-->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
@@ -25,7 +25,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap"
-          rel="stylesheet">
+        rel="stylesheet">
 
     <style>
         .roboto {
@@ -35,149 +35,172 @@
         .poppins {
             font-family: 'Poppins', sans-serif !important;
         }
+
+        .flexs {
+            display: flex;
+        }
+
+        @media (max-width: 650px) {
+            .flexs {
+                flex-direction: column;
+            }
+        }
     </style>
 </head>
 
 <body class="bg-gray-100 text-BIZ4D_GRAY work-sans leading-normal text-base tracking-normal"
-      style="background-color: #F7FAFF;">
+    style="background-color: #F7FAFF;">
 
-<!--Navbar-->
-<nav id="header" class="w-full z-30 top-0 py-1 bg-BIZ4D_BLUE roboto">
-    <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-6 py-3">
-        <label for="menu-toggle" class="cursor-pointer md:hidden block">
-            <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                 viewBox="0 0 20 20">
-                <title>menu</title>
-                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-            </svg>
-        </label>
-        <input class="hidden" type="checkbox" id="menu-toggle"/>
-        <div class="order-1 md:order-2">
-            <a class="flex items-center tracking-wide no-underline hover:no-underline font-bold text-white text-xl "
-               href="/">
-                <img src="https://www.biz4d.com/wp-content/uploads/2019/06/Logo-biz4d_white.png" class="w-1/2">
-            </a>
+    <!--Navbar-->
+    <nav id="header" class="w-full z-30 top-0 py-1 bg-BIZ4D_BLUE roboto">
+        <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-6 py-3">
+            <label for="menu-toggle" class="cursor-pointer md:hidden block">
+                <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                    viewBox="0 0 20 20">
+                    <title>menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+            </label>
+            <input class="hidden" type="checkbox" id="menu-toggle" />
+            <div class="order-1 md:order-2">
+                <a class="flex items-center tracking-wide no-underline hover:no-underline font-bold text-white text-xl "
+                    href="/">
+                    <img src="https://www.biz4d.com/wp-content/uploads/2019/06/Logo-biz4d_white.png" class="w-1/2">
+                </a>
+            </div>
+            <div class="hidden md:flex md:items-center md:w-auto w-full order-3" id="menu">
+                <nav>
+                    <ul class="md:flex items-center justify-between text-base text-white pt-4 md:pt-0">
+                        <li><a class="inline-block no-underline hover:underline rounded py-2 px-4 uppercase text-lg"
+                                href="#">All Programs</a></li>
+                        <li><a class="inline-block no-underline hover:underline rounded py-2 px-4 uppercase text-lg"
+                                href="#">Profile</a></li>
+                        <li><a class="inline-block no-underline hover:underline rounded py-2 px-4 uppercase text-lg"
+                                href="#">Surveys</a></li>
+                        <li><a class="inline-block no-underline hover:underline rounded py-2 px-4 uppercase text-lg"
+                                href="#">Tandem</a></li>
+                        <li><a class="inline-block no-underline hover:underline rounded py-2 px-4 uppercase text-lg"
+                                href="#">Workflow</a></li>
+                        <li><a class="inline-block no-underline hover:underline rounded py-2 px-4 uppercase text-lg"
+                                href="#">More</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <div class="hidden md:flex md:items-center md:w-auto w-full order-3" id="menu">
-            <nav>
-                <ul class="md:flex items-center justify-between text-base text-white pt-4 md:pt-0">
-                    <li><a class="inline-block no-underline hover:underline rounded py-2 px-4 uppercase text-lg"
-                           href="#">All Programs</a></li>
-                    <li><a class="inline-block no-underline hover:underline rounded py-2 px-4 uppercase text-lg"
-                           href="#">Profile</a></li>
-                    <li><a class="inline-block no-underline hover:underline rounded py-2 px-4 uppercase text-lg"
-                           href="#">Surveys</a></li>
-                    <li><a class="inline-block no-underline hover:underline rounded py-2 px-4 uppercase text-lg"
-                           href="#">Tandem</a></li>
-                    <li><a class="inline-block no-underline hover:underline rounded py-2 px-4 uppercase text-lg"
-                           href="#">Workflow</a></li>
-                    <li><a class="inline-block no-underline hover:underline rounded py-2 px-4 uppercase text-lg"
-                           href="#">More</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-</nav>
+    </nav>
 
 
-<!--Body-->
-<div class="flex flex-wrap poppins" style="background-color: #F2F6FE;">
+    <!--Body-->
+    <div class="flex flex-wrap poppins" style="background-color: #F2F6FE;">
 
-    <div class="flex flex-row w-full">
-        <!-- Sidebar -->
-        <aside class="w-full lg:w-1/4 pt-4 lg:h-full px-4 z-50 hidden lg:block" style="background-color: #F2F6FE;">
+        <div class="flex flex-row w-full">
+            <!-- Sidebar -->
+            <aside class="w-full lg:w-1/4 pt-4 lg:h-full px-4 z-50 hidden lg:block" style="background-color: #F2F6FE;">
 
-            <div class="flex flex-wrap mb-6 items-start px-2">
-                <div class="flex-1 float-left text-xl">
-                    <i class="fa fa-bell-o fa-fw"></i>
-                    <i class="fa fa-heart-o fa-fw"></i>
-                </div>
-                <div class="flex-1 flex-wrap text-right">
-                    <div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
-                        <input type="checkbox" name="toggle" id="toggle"
-                               class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
-                        <label for="toggle"
-                               class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
+                <div class="flex flex-wrap mb-6 items-start px-2">
+                    <div class="flex-1 float-left text-xl">
+                        <i class="fa fa-bell-o fa-2x" style="color: #999;"></i>
+                        <i class="fa fa-heart-o fa-2x" style="color: #999;"></i>
                     </div>
-                    <label for="toggle" class="text-gray-700">Day Mode</label>
-                </div>
-            </div>
-
-            <div class="flex flex-col items-center text-center">
-                <div class="text-center w-1/2">
-                    <img src="img/Mask Group (1).png" class="rounded-full">
-                </div>
-                <img src="/img/Vector 27.png" class="absolute" style="left: 230px; top: 225px;">
-                <div class="flex-fill mt-3 z-50" style="background-color: #F2F6FE !important;">
-                    <h3 class="text-2xl uppercase my-4 px-3 text-BIZ4D_PURPLE">Join us <b>Anna :)</b></h3>
-                </div>
-            </div>
-
-            <p class="text-xl">
-                <span class="text-md font-bold text-BIZ4D_PURPLE">"</span>
-                <br>
-                If you ask any successful person how they got where they are today, chances are they'll tell you about
-                a mentor they've had somewhere along the way
-                <span class="text-xl font-bold text-BIZ4D_PURPLE pt-3">"</span>
-            </p>
-
-            <h3 class="text-left text-xl font-bold text-BIZ4D_PURPLE mt-8">Barack Obama</h3>
-
-            <div class="flex flex-col items-center text-center mt-6">
-                <div class="text-center pl-12 mt-12">
-                    <img src="img/journey.png" class="w-full">
-                </div>
-            </div>
-        </aside>
-
-        <!-- Main content -->
-        <section class="w-full md:w-3/4 border-l-2 flex-col items-start lg:h-full p-6 min-h-screen"
-                 style="background: url(img/backgroand.png) no-repeat; background-size: cover;">
-
-            <h1 class="text-2xl mb-6 text-BIZ4D_BLUE">Entrepreneurship Mentoring</h1>
-
-            <div class="flex flex-wrap border border-gray-300 bg-white rounded-2xl shadow-lg overflow-hidden">
-                <div class="w-full">
-                    <div class="bg-white flex">
-                        <div class="lg:w-2/6">
-                            <a href="#" class="mb-4">
-                                <img src="/img/pic.png" class="h-full">
-                            </a>
+                    <div class="flex-1 flex-wrap text-right pt-2">
+                        <div
+                            class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+                            <input type="checkbox" name="toggle" id="toggle"
+                                class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer" />
+                            <label for="toggle"
+                                class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
                         </div>
-                        <div class="flex-1 p-6 lg:w-4/6">
-                            <h1 class="text-2xl text-BIZ4D_PURPLE mb-4">Entrepreneur in year 1 - 5 after starting their business</h1>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                                the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                                of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                                but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                                popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                                and more recently with desktop publishing software like Aldus PageMaker including versions of
-                                Lorem Ipsum.
-                            </p>
-                            <div class="block mt-8">
-                                <a href="" class="px-4 text-3xl pt-2">
-                                    <i class="fa fa-heart-o fa-fw"></i>
+                        <label for="toggle" class="text-gray-700">Day Mode</label>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center text-center">
+                    <div class="text-center w-1/2">
+                        <img src="img/Mask Group (1).png" class="rounded-full">
+                    </div>
+                    <img src="/img/Vector 27.png" class="absolute" style="left: 230px; top: 225px;">
+                    <div class="flex-fill mt-3 z-50" style="background-color: #F2F6FE !important;">
+                        <h3 class="text-2xl uppercase my-4 px-3 text-BIZ4D_PURPLE">Join us <b>Anna :)</b></h3>
+                    </div>
+                </div>
+
+                <p class="text-xl">
+                    <span class="text-md font-bold text-BIZ4D_PURPLE pt-3">
+                        <i class="fa fa-quote-left pl-2"></i>
+                    </span>
+                    <br>
+                    If you ask any successful person how they got where they are today, chances are they'll tell you
+                    about
+                    a mentor they've had somewhere along the way
+                    <span class="text-md font-bold text-BIZ4D_PURPLE pt-3">
+                        <i class="fa fa-quote-right pl-2"></i>
+                    </span>
+                </p>
+
+                <h3 class="text-left text-xl font-bold text-BIZ4D_PURPLE mt-8">Barack Obama</h3>
+
+                <div class="flex flex-col items-center text-center mt-6">
+                    <div class="text-center pl-12 mt-12">
+                        <img src="img/journey.png" class="w-full">
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main content -->
+            <section class="w-full lg:w-3/4 md:w-4/4 border-l-2 flex-col items-start lg:h-full p-6 min-h-screen"
+                style="background: url(img/backgroand.png) no-repeat; background-size: cover;">
+
+                <h1 class="text-2xl mb-6 text-BIZ4D_BLUE">Entrepreneurship Mentoring</h1>
+
+                <div class="flex flex-wrap border border-gray-300 bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="w-full">
+                        <div class="bg-white flexs">
+                            <div class="lg:w-2/6 md:w-6/6">
+                                <a href="#" class="mb-4">
+                                    <img src="/img/pic.png" class="h-full">
                                 </a>
-                                <span class="text-3xl font-bold text-BIZ4D_BLUE">
-                                    150$
-                                </span>
-                                <a href="#" class="btn-green text-2xl px-4 py-2 rounded-lg font-bold float-right">
-                                    Take Interview
-                                </a>
+                            </div>
+                            <div class="flex-1 p-6 lg:w-4/6">
+                                <h1 class="text-2xl text-BIZ4D_PURPLE mb-4">Entrepreneur in year 1 - 5 after starting
+                                    their business</h1>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been
+                                    the industry's standard dummy text ever since the 1500s, when an unknown printer
+                                    took a galley
+                                    of type and scrambled it to make a type specimen book. It has survived not only five
+                                    centuries,
+                                    but also the leap into electronic typesetting, remaining essentially unchanged. It
+                                    was
+                                    popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                                    passages,
+                                    and more recently with desktop publishing software like Aldus PageMaker including
+                                    versions of
+                                    Lorem Ipsum.
+                                </p>
+                                <div class="block mt-8">
+                                    <a href="" class="px-4 text-3xl pt-2">
+                                        <i class="fa fa-heart-o fa-fw"></i>
+                                    </a>
+                                    <span class="text-3xl font-bold text-BIZ4D_BLUE">
+                                        150$
+                                    </span>
+                                    <a href="#" class="btn-green text-2xl px-4 py-2 rounded-lg font-bold float-right">
+                                        Take Interview
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
 
-            <img src="/img/illustration2.png" class="w-full mt-16 lg:mt-32">
+                <img src="/img/illustration2.png" class="w-full mt-16 lg:mt-32">
 
-        </section>
+            </section>
+        </div>
+
     </div>
-
-</div>
 
 </body>
 
@@ -213,4 +236,3 @@
 </style>
 
 </html>
-

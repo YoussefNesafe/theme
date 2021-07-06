@@ -18,7 +18,7 @@
     <!--SwiperJS-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/sw    iper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!--Fonts-->
@@ -34,6 +34,11 @@
 
         .poppins {
             font-family: 'Poppins', sans-serif !important;
+        }
+
+        .heart {
+            color: #999;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -89,10 +94,10 @@
 
                 <div class="flex flex-wrap mb-6 items-start px-2">
                     <div class="flex-1 float-left text-xl">
-                        <i class="fa fa-bell-o fa-fw"></i>
-                        <i class="fa fa-heart-o fa-fw"></i>
+                        <i class="fa fa-bell-o fa-2x pr-2" style="color: #999; transform: rotateZ(15deg);"></i>
+                        <i class="fa fa-heart-o fa-2x" style="color: #999;"></i>
                     </div>
-                    <div class="flex-1 flex-wrap text-right">
+                    <div class="flex-1 flex-wrap text-right pt-2">
                         <div
                             class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
                             <input type="checkbox" name="toggle" id="toggle"
@@ -115,28 +120,32 @@
                 </div>
 
                 <p class="text-xl">
-                    <span class="text-md font-bold text-BIZ4D_PURPLE">"</span>
+                    <span class="text-md font-bold text-BIZ4D_PURPLE">
+                        <i class="fa fa-quote-left "></i>
+                    </span>
                     <br>
                     If you ask any successful person how they got where they are today, chances are they'll tell you
                     about
                     a mentor they've had somewhere along the way
-                    <span class="text-xl font-bold text-BIZ4D_PURPLE pt-3">"</span>
+                    <span class="text-md font-bold text-BIZ4D_PURPLE pt-3">
+                        <i class="fa fa-quote-right pl-2"></i>
+                    </span>
                 </p>
 
                 <h3 class="text-center text-xl font-bold text-BIZ4D_PURPLE mt-8">Barack Obama</h3>
 
                 <div class="flex flex-col items-center text-center mt-6">
                     <div class="text-center w-2/3 pl-12">
-                        <img src="img/Mask%20Group.png" class="w-1/2">
+                        <img src="img/Mask%20Group.png">
                     </div>
                 </div>
             </aside>
 
             <!-- Main content -->
-            <section class="w-full md:w-3/4 flex border-l-2 flex-col items-start lg:h-full p-6 min-h-screen"
+            <section class="w-full lg:w-3/4 md:w-4/4 flex border-l-2 flex-col items-start lg:h-full p-6 min-h-screen"
                 style="background: url(img/backgroand.png) no-repeat; background-size: cover;">
 
-                <h1 class="uppercase font-bold text-lg pb-4">All Programs</h1>
+                <h1 class="uppercase pb-4" style="font-size: 25px; font-weight: 500;">All Programs</h1>
 
                 <div class="block w-full">
                     <!-- Desktop slider -->
@@ -147,20 +156,16 @@
                                     <button type="button"
                                         class="border border-white border-l border-t border-b btn-pink rounded-lg rounded-r-none px-8 py-2 mb-4 w-2/3 absolute"
                                         style="top: 5%; right: 0;">
-                                        Join
+                                        <a href="view.html">Join</a>
                                     </button>
                                     <img class="w-full" src="/img/BLUE.png">
                                     <div class="px-6 py-4">
-                                        <div class="text-2xl mb-2">Entrepreneurship Mentoring</div>
+                                        <div class="text-xl mb-2" style="color: #2368B3;">Entrepreneurship Mentoring
+                                        </div>
                                     </div>
 
                                     <div class="block mb-4 px-4">
-                                        <a href="" class="px-4 text-3xl text-BIZ4D_GRAY">
-                                            <i class="fa fa-heart-o fa-fw"></i>
-                                        </a>
-                                        <a href="view.html" class="float-right" style="margin-top: -5px;">
-                                            <img src="img/Polygon 1.png" alt="">
-                                        </a>
+                                        <i class="fa fa-heart-o fa-2x heart"></i>
                                     </div>
                                 </div>
                             </div>
@@ -169,20 +174,15 @@
                                     <button type="button"
                                         class="border border-white border-l border-t border-b btn-blue rounded-lg rounded-r-none px-8 py-2 mb-4 w-2/3 absolute"
                                         style="top: 5%; right: 0;">
-                                        Join
+                                        <a href="view.html">Join</a>
                                     </button>
                                     <img class="w-full" src="/img/VIOLET.png">
                                     <div class="px-6 py-4">
-                                        <div class="text-2xl mb-2">Leadership Mentoring</div>
+                                        <div class="text-xl mb-2" style="color: #2368B3;">Leadership Mentoring</div>
                                     </div>
 
                                     <div class="block mb-4 px-4">
-                                        <a href="" class="px-4 text-3xl text-BIZ4D_GRAY">
-                                            <i class="fa fa-heart-o fa-fw"></i>
-                                        </a>
-                                        <a href="view.html" class="float-right" style="margin-top: -5px;">
-                                            <img src="img/Polygon 1.png" alt="">
-                                        </a>
+                                        <i class="fa fa-heart-o fa-2x heart"></i>
                                     </div>
                                 </div>
                             </div>
@@ -191,20 +191,16 @@
                                     <button type="button"
                                         class="border border-white border-l border-t border-b btn-pink rounded-lg rounded-r-none px-8 py-2 mb-4 w-2/3 absolute"
                                         style="top: 5%; right: 0;">
-                                        Join
+                                        <a href="view.html">Join</a>
                                     </button>
                                     <img class="w-full" src="/img/BLUE.png">
                                     <div class="px-6 py-4">
-                                        <div class="text-2xl mb-2">Entrepreneurship Mentoring</div>
+                                        <div class="text-xl mb-2" style="color: #2368B3;">Entrepreneurship Mentoring
+                                        </div>
                                     </div>
 
                                     <div class="block mb-4 px-4">
-                                        <a href="" class="px-4 text-3xl text-BIZ4D_GRAY">
-                                            <i class="fa fa-heart-o fa-fw"></i>
-                                        </a>
-                                        <a href="view.html" class="float-right" style="margin-top: -5px;">
-                                            <img src="img/Polygon 1.png" alt="">
-                                        </a>
+                                        <i class="fa fa-heart-o fa-2x heart"></i>
                                     </div>
                                 </div>
                             </div>
@@ -213,20 +209,15 @@
                                     <button type="button"
                                         class="border border-white border-l border-t border-b btn-blue rounded-lg rounded-r-none px-8 py-2 mb-4 w-2/3 absolute"
                                         style="top: 5%; right: 0;">
-                                        Join
+                                        <a href="view.html">Join</a>
                                     </button>
                                     <img class="w-full" src="/img/VIOLET.png">
                                     <div class="px-6 py-4">
-                                        <div class="text-2xl mb-2">Leadership Mentoring</div>
+                                        <div class="text-xl mb-2" style="color: #2368B3;">Leadership Mentoring</div>
                                     </div>
 
                                     <div class="block mb-4 px-4">
-                                        <a href="" class="px-4 text-3xl text-BIZ4D_GRAY">
-                                            <i class="fa fa-heart-o fa-fw"></i>
-                                        </a>
-                                        <a href="view.html" class="float-right" style="margin-top: -5px;">
-                                            <img src="img/Polygon 1.png" alt="">
-                                        </a>
+                                        <i class="fa fa-heart-o fa-2x heart"></i>
                                     </div>
                                 </div>
                             </div>
@@ -235,19 +226,21 @@
                     </div>
 
                     <!--Mobile view-->
-                    <div class="grid grid-cols-2 gap-4 lg:hidden">
-                        <div class="max-w-sm bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="swiper-container-mobile grid grid-cols-1 lg:hidden">
+                        <div class="max-w-sm bg-white rounded-lg overflow-hidden shadow-lg my-4 mx-auto">
+                            <button type="button"
+                                class="border border-white border-l border-t border-b btn-blue rounded-lg rounded-r-none px-8 py-2 mb-4 w-2/3 absolute"
+                                style="top: 5%; right: 0;">
+                                <a href="view.html">Join</a>
+                            </button>
                             <img class="w-full" src="/img/BLUE.png">
                             <div class="px-6 py-4">
-                                <div class="text-2xl mb-2">Entrepreneurship Mentoring</div>
+                                <div class="text-2xl mb-2">Leadership Mentoring</div>
                             </div>
 
                             <div class="block mb-4 px-4">
                                 <a href="" class="px-4 text-3xl text-BIZ4D_GRAY">
-                                    <i class="fa fa-heart-o fa-fw"></i>
-                                </a>
-                                <a href="view.html" class="float-right" style="margin-top: -5px;">
-                                    <img src="img/Polygon 1.png" alt="">
+                                    <i class="fa fa-heart-o fa-fw heart"></i>
                                 </a>
                             </div>
                         </div>
@@ -290,9 +283,6 @@
                             <div class="block mb-4 px-4">
                                 <a href="" class="px-4 text-3xl text-BIZ4D_GRAY">
                                     <i class="fa fa-heart-o fa-fw"></i>
-                                </a>
-                                <a href="view.html" class="float-right" style="margin-top: -5px;">
-                                    <img src="img/Polygon 1.png" alt="">
                                 </a>
                             </div>
                         </div>
@@ -326,6 +316,22 @@
             prevEl: ".swiper-button-prev",
         },
     });
+</script>
+<script>
+    let hearts = document.querySelectorAll(".heart");
+    hearts.forEach((heart) => {
+        heart.addEventListener("click", (e) => {
+            if (e.target.classList.contains("fa-heart-o")) {
+                e.target.classList.remove("fa-heart-o");
+                e.target.classList.add("fa-heart");
+                e.target.style.color = "#C41F69";
+            } else {
+                e.target.classList.remove("fa-heart");
+                e.target.classList.add("fa-heart-o");
+                e.target.style.color = "#999";
+            }
+        });
+    })
 </script>
 
 <style>
