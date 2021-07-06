@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.toggle-checkbox:checked {
+    @apply right-0 border-green-400;
+    right: 0;
+    border-color: #1361A0;
+}
+
+.toggle-checkbox:checked + .toggle-label {
+    @apply bg-BIZ4D_BLUE;
+    background-color: #1361A0;
+}
+
+.btn-pink {
+    @apply bg-BIZ4D_PINK text-white;
+}
+
+.btn-blue {
+    @apply bg-BIZ4D_BLUE text-white;
+}
+
+.btn-purple {
+    @apply bg-BIZ4D_PURPLE text-white;
+}
+
+.btn-green {
+    @apply bg-BIZ4D_GREEN text-white;
+}
+
+.btn-round {
+    @apply rounded-full shadow-lg;
+    box-shadow: 0px 2px 5px 3px #ccc;
+}
