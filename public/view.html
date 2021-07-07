@@ -27,6 +27,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/nav.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
     <style>
         .roboto {
             font-family: 'Roboto', sans-serif !important;
@@ -52,40 +63,43 @@
     style="background-color: #F7FAFF;">
 
     <!--Navbar-->
-    <nav id="header" class="w-full z-30 top-0 py-1 bg-BIZ4D_BLUE roboto">
-        <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-6 py-3">
-            <label for="menu-toggle" class="cursor-pointer md:hidden block">
-                <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    viewBox="0 0 20 20">
-                    <title>menu</title>
-                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-                </svg>
-            </label>
-            <input class="hidden" type="checkbox" id="menu-toggle" />
-            <div class="order-1 md:order-2">
-                <a class="flex items-center tracking-wide no-underline hover:no-underline font-bold text-white text-xl "
-                    href="/">
-                    <img src="https://www.biz4d.com/wp-content/uploads/2019/06/Logo-biz4d_white.png" class="w-1/2">
-                </a>
+    <nav class="navbar navbar-expand-lg navbar-dark pb-3">
+        <a class="navbar-brand logo d-flex flex-column" href="#">
+            <div class="logo-text">
+                biz4d
+                <span class="ml-2 span-container">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
             </div>
-            <div class="hidden md:flex md:items-center md:w-auto w-full order-3" id="menu">
-                <nav>
-                    <ul class="md:flex items-center justify-between text-base text-white pt-4 md:pt-0">
-                        <li><a class="inline-block no-underline hover:underline rounded py-2 px-4 uppercase text-lg"
-                                href="#">All Programs</a></li>
-                        <li><a class="inline-block no-underline hover:underline rounded py-2 px-4 uppercase text-lg"
-                                href="#">Profile</a></li>
-                        <li><a class="inline-block no-underline hover:underline rounded py-2 px-4 uppercase text-lg"
-                                href="#">Surveys</a></li>
-                        <li><a class="inline-block no-underline hover:underline rounded py-2 px-4 uppercase text-lg"
-                                href="#">Tandem</a></li>
-                        <li><a class="inline-block no-underline hover:underline rounded py-2 px-4 uppercase text-lg"
-                                href="#">Workflow</a></li>
-                        <li><a class="inline-block no-underline hover:underline rounded py-2 px-4 uppercase text-lg"
-                                href="#">More</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <p class="lead">Business for development</p>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">All programs<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">profile<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">surveys<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">tandem<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">workflow<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">more<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
         </div>
     </nav>
 
@@ -100,7 +114,7 @@
                 <div class="flex flex-wrap mb-6 items-start px-2">
                     <div class="flex-1 float-left text-xl">
                         <i class="fa fa-bell-o fa-2x" style="color: #999;"></i>
-                        <i class="fa fa-heart-o fa-2x" style="color: #999;"></i>
+                        <i class="fa fa-heart-o fa-2x heart" style="color: #999;"></i>
                     </div>
                     <div class="flex-1 flex-wrap text-right pt-2">
                         <div
@@ -179,9 +193,9 @@
                                     Lorem Ipsum.
                                 </p>
                                 <div class="block mt-8">
-                                    <a href="" class="px-4 text-3xl pt-2">
-                                        <i class="fa fa-heart-o fa-fw"></i>
-                                    </a>
+
+                                    <i class="px-4  pt-2 fa fa-heart-o fa-2x heart"></i>
+
                                     <span class="text-3xl font-bold text-BIZ4D_BLUE">
                                         150$
                                     </span>
@@ -224,7 +238,22 @@
         },
     });
 </script>
-
+<script>
+    let hearts = document.querySelectorAll(".heart");
+    hearts.forEach((heart) => {
+        heart.addEventListener("click", (e) => {
+            if (e.target.classList.contains("fa-heart-o")) {
+                e.target.classList.remove("fa-heart-o");
+                e.target.classList.add("fa-heart");
+                e.target.style.color = "#C41F69";
+            } else {
+                e.target.classList.remove("fa-heart");
+                e.target.classList.add("fa-heart-o");
+                e.target.style.color = "#999";
+            }
+        });
+    })
+</script>
 <style>
     .swiper-container-desktop {
         overflow: visible;

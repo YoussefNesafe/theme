@@ -1,0 +1,66 @@
+:root {
+  --nav-color: #3474b9;
+  --active-color: #2c6eb2;
+  --btn-color: #2f71b8;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav.navbar {
+  background: var(--nav-color);
+}
+.logo {
+  position: relative;
+  margin-right: 70px;
+  margin-left: 20px;
+}
+.logo .logo-text {
+  font-size: 30px;
+}
+.logo .span-container {
+  position: relative;
+}
+.logo .span-container span {
+  display: inline-block;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  margin-right: 5px;
+  position: absolute;
+}
+.logo .span-container span:nth-of-type(1) {
+  width: 20px;
+  height: 20px;
+  background: #87c73b;
+  left: 0px;
+}
+.logo .span-container span:nth-of-type(2) {
+  width: 15px;
+  height: 15px;
+  background: #c5316e;
+  left: 20px;
+}
+.logo .span-container span:nth-of-type(3) {
+  width: 10px;
+  height: 10px;
+  background: #2668af;
+  left: 35px;
+}
+.logo p {
+  font-size: 10px;
+  position: absolute;
+  top: 75%;
+  text-transform: uppercase;
+}
+nav ul {
+  width: 100%;
+}
+nav ul li {
+  flex: 1;
+}
+nav ul li a {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 20px;
+}

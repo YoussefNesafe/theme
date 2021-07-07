@@ -26,6 +26,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/nav.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
 
     <style>
         .roboto {
@@ -34,6 +44,10 @@
 
         .poppins {
             font-family: 'Poppins', sans-serif !important;
+        }
+
+        .mobile-card {
+            width: 300px;
         }
 
         .heart {
@@ -47,40 +61,43 @@
     style="background-color: #F7FAFF;">
 
     <!--Navbar-->
-    <nav id="header" class="w-full z-30 top-0 py-1 bg-BIZ4D_BLUE roboto">
-        <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-6 py-3">
-            <label for="menu-toggle" class="cursor-pointer md:hidden block">
-                <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    viewBox="0 0 20 20">
-                    <title>menu</title>
-                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-                </svg>
-            </label>
-            <input class="hidden" type="checkbox" id="menu-toggle" />
-            <div class="order-1 md:order-2">
-                <a class="flex items-center tracking-wide no-underline hover:no-underline font-bold text-white text-xl "
-                    href="/">
-                    <img src="https://www.biz4d.com/wp-content/uploads/2019/06/Logo-biz4d_white.png" class="w-1/2">
-                </a>
+    <nav class="navbar navbar-expand-lg navbar-dark pb-3">
+        <a class="navbar-brand logo d-flex flex-column" href="#">
+            <div class="logo-text">
+                biz4d
+                <span class="ml-2 span-container">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
             </div>
-            <div class="hidden md:flex md:items-center md:w-auto w-full order-3" id="menu">
-                <nav>
-                    <ul class="md:flex items-center justify-between text-base text-white pt-4 md:pt-0">
-                        <li><a class="inline-block no-underline hover:underline rounded py-2 px-4 uppercase text-lg"
-                                href="#">All Programs</a></li>
-                        <li><a class="inline-block no-underline hover:underline rounded py-2 px-4 uppercase text-lg"
-                                href="#">Profile</a></li>
-                        <li><a class="inline-block no-underline hover:underline rounded py-2 px-4 uppercase text-lg"
-                                href="#">Surveys</a></li>
-                        <li><a class="inline-block no-underline hover:underline rounded py-2 px-4 uppercase text-lg"
-                                href="#">Tandem</a></li>
-                        <li><a class="inline-block no-underline hover:underline rounded py-2 px-4 uppercase text-lg"
-                                href="#">Workflow</a></li>
-                        <li><a class="inline-block no-underline hover:underline rounded py-2 px-4 uppercase text-lg"
-                                href="#">More</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <p class="lead">Business for development</p>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">All programs<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">profile<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">surveys<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">tandem<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">workflow<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">more<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
         </div>
     </nav>
 
@@ -113,7 +130,7 @@
                     <div class="text-center w-1/2">
                         <img src="img/Mask Group (1).png" class="rounded-full">
                     </div>
-                    <img src="/img/Vector 27.png" class="absolute" style="left: 230px; top: 225px;">
+                    <img src="/img/Vector 27.png" class="absolute line" style="left: 230px; top: 225px;">
                     <div class="flex-fill mt-3 z-50" style="background-color: #F2F6FE !important;">
                         <h3 class="text-2xl uppercase my-4 px-3 text-BIZ4D_PURPLE">Welcome <b>Anna!</b></h3>
                     </div>
@@ -156,7 +173,7 @@
                                     <button type="button"
                                         class="border border-white border-l border-t border-b btn-pink rounded-lg rounded-r-none px-8 py-2 mb-4 w-2/3 absolute"
                                         style="top: 5%; right: 0;">
-                                        <a href="view.html">Join</a>
+                                        <a href="view.html" class="text-white">Join</a>
                                     </button>
                                     <img class="w-full" src="/img/BLUE.png">
                                     <div class="px-6 py-4">
@@ -174,7 +191,7 @@
                                     <button type="button"
                                         class="border border-white border-l border-t border-b btn-blue rounded-lg rounded-r-none px-8 py-2 mb-4 w-2/3 absolute"
                                         style="top: 5%; right: 0;">
-                                        <a href="view.html">Join</a>
+                                        <a href="view.html" class="text-white">Join</a>
                                     </button>
                                     <img class="w-full" src="/img/VIOLET.png">
                                     <div class="px-6 py-4">
@@ -191,7 +208,7 @@
                                     <button type="button"
                                         class="border border-white border-l border-t border-b btn-pink rounded-lg rounded-r-none px-8 py-2 mb-4 w-2/3 absolute"
                                         style="top: 5%; right: 0;">
-                                        <a href="view.html">Join</a>
+                                        <a href="view.html" class="text-white">Join</a>
                                     </button>
                                     <img class="w-full" src="/img/BLUE.png">
                                     <div class="px-6 py-4">
@@ -209,7 +226,7 @@
                                     <button type="button"
                                         class="border border-white border-l border-t border-b btn-blue rounded-lg rounded-r-none px-8 py-2 mb-4 w-2/3 absolute"
                                         style="top: 5%; right: 0;">
-                                        <a href="view.html">Join</a>
+                                        <a href="view.html" class="text-white">Join</a>
                                     </button>
                                     <img class="w-full" src="/img/VIOLET.png">
                                     <div class="px-6 py-4">
@@ -227,63 +244,52 @@
 
                     <!--Mobile view-->
                     <div class="swiper-container-mobile grid grid-cols-1 lg:hidden">
-                        <div class="max-w-sm bg-white rounded-lg overflow-hidden shadow-lg my-4 mx-auto">
-                            <button type="button"
-                                class="border border-white border-l border-t border-b btn-blue rounded-lg rounded-r-none px-8 py-2 mb-4 w-2/3 absolute"
-                                style="top: 5%; right: 0;">
-                                <a href="view.html">Join</a>
-                            </button>
+                        <div class="max-w-sm bg-white rounded-lg overflow-hidden shadow-lg my-4 mx-auto mobile-card">
                             <img class="w-full" src="/img/BLUE.png">
                             <div class="px-6 py-4">
-                                <div class="text-2xl mb-2">Leadership Mentoring</div>
+                                <a href="view.html" class="text-2xl mb-2" style="color: #2368B3;">
+                                    Leadership Mentoring
+                                </a>
                             </div>
 
                             <div class="block mb-4 px-4">
-                                <a href="" class="px-4 text-3xl text-BIZ4D_GRAY">
-                                    <i class="fa fa-heart-o fa-fw heart"></i>
-                                </a>
+                                <i class="fa fa-heart-o fa-2x heart"></i>
                             </div>
                         </div>
-                        <div class="max-w-sm bg-white rounded-lg overflow-hidden shadow-lg">
+                        <div class="max-w-sm bg-white rounded-lg overflow-hidden shadow-lg my-4 mx-auto mobile-card">
                             <img class="w-full" src="/img/VIOLET.png">
                             <div class="px-6 py-4">
-                                <div class="text-2xl mb-2">Entrepreneurship Mentoring</div>
+                                <a href="view.html" class="text-2xl mb-2" style="color: #2368B3;">
+                                    Entrepreneurship Mentoring
+                                </a>
                             </div>
 
                             <div class="block mb-4 px-4">
-                                <a href="" class="px-4 text-3xl text-BIZ4D_GRAY">
-                                    <i class="fa fa-heart-o fa-fw"></i>
-                                </a>
-                                <a href="view.html" class="float-right" style="margin-top: -5px;">
-                                    <img src="img/Polygon 1.png" alt="">
-                                </a>
+                                <i class="fa fa-heart-o fa-2x heart"></i>
                             </div>
                         </div>
-                        <div class="max-w-sm bg-white rounded-lg overflow-hidden shadow-lg">
+                        <div class="max-w-sm bg-white rounded-lg overflow-hidden shadow-lg my-4 mx-auto mobile-card">
                             <img class="w-full" src="/img/BLUE.png">
                             <div class="px-6 py-4">
-                                <div class="text-2xl mb-2">Entrepreneurship Mentoring</div>
+                                <a href="view.html" class="text-2xl mb-2" style="color: #2368B3;">
+                                    Leadership Mentoring
+                                </a>
                             </div>
 
                             <div class="block mb-4 px-4">
-                                <a href="" class="px-4 text-3xl text-BIZ4D_GRAY">
-                                    <i class="fa fa-heart-o fa-fw"></i>
-                                </a>
-                                <a href="view.html" class="float-right" style="margin-top: -5px;">
-                                    <img src="img/Polygon 1.png" alt="">
-                                </a>
+                                <i class="fa fa-heart-o fa-2x heart"></i>
                             </div>
                         </div>
-                        <div class="max-w-sm bg-white rounded-lg overflow-hidden shadow-lg">
+                        <div class="max-w-sm bg-white rounded-lg overflow-hidden shadow-lg my-4 mx-auto mobile-card">
                             <img class="w-full" src="/img/VIOLET.png">
                             <div class="px-6 py-4">
-                                <div class="text-2xl mb-2">Entrepreneurship Mentoring</div>
+                                <a href="view.html" class="text-2xl mb-2" style="color: #2368B3;">
+                                    Entrepreneurship Mentoring
+                                </a>
                             </div>
 
                             <div class="block mb-4 px-4">
-                                <a href="" class="px-4 text-3xl text-BIZ4D_GRAY">
-                                    <i class="fa fa-heart-o fa-fw"></i>
-                                </a>
+                                <i class="fa fa-heart-o fa-2x heart"></i>
                             </div>
                         </div>
                     </div>
@@ -333,6 +339,8 @@
         });
     })
 </script>
+
+
 
 <style>
     .swiper-container-desktop {
